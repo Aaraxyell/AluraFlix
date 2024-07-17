@@ -1,0 +1,28 @@
+.video-controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #00265f;
+}
+
+.video-controls button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.video-controls button:hover {
+  text-decoration: underline;
+}
+
+.video-controls button .icon-delete,
+.video-controls button .icon-edit {
+  width: 20px; 
+  height: 20px;
+  margin-right: 5px;
+}

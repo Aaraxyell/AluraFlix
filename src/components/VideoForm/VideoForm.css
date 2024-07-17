@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.form-container {
+  width: 100%;
+  max-width: 1500px;
+  background-color: #06023f;
+  padding: 40px;
+  border: 3px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(1, 5, 58, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #007bff;
+  font-size: 5em;
+  margin-bottom: 30px;
+}
+
+.form-container h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.video-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-field {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  font-family: "Source Sans 3", sans-serif;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 2em;
+  color: white;
+  position: relative;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #888;
+}
+
+.form-field textarea {
+  resize: none;
+  height: 120px;
+}
+
+.form-buttons {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.form-buttons button {
+  padding: 15px 25px;
+  font-size: 1.1em;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.form-buttons button[type="submit"]:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+.form-buttons button[type="button"] {
+  background-color: #444;
+  color: white;
+}
+
+.form-buttons button[type="button"]:hover {
+  background-color: #666;
+}
+
+@media (max-width: 480px) {
+  
+  .form-container h1 {
+    font-size: 1.5em;
+  }
+
+  .form-container h2 {
+    display: none;
+  }
+
+  .video-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .form-field label,
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-size: 1em;
+  }
+
+  .form-field select {
+    width: 230px;
+  }
+
+  .form-field textarea {
+    resize: none;
+    height: 50px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-buttons button {
+    width: 80%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .form-container h1 {
+    font-size: 1.5em;
+  }
+
+  .form-container h2 {
+    display: none;
+  }
+
+  .video-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .form-field label,
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-size: 1em;
+  }
+
+  .form-field select {
+    width: 500px;
+  }
+
+  .form-field textarea {
+    resize: none;
+    height: 60px;
+  }
+
+  .form-buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .form-buttons button {
+    width: 40%;
+  }
+}

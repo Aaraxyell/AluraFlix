@@ -1,0 +1,38 @@
+.video-item {
+  width: 100%;
+  max-width: 350px; 
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.video-frame-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+  .video-item {
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-item {
+    flex: 0 0 100%;
+  }
+}

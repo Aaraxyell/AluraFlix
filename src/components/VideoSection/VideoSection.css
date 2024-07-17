@@ -1,0 +1,53 @@
+.video-section-container {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.video-section-title {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  text-align: start;
+  color: white;
+}
+
+.video-section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .video-section {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  
+  .video-item {
+    flex: 0 0 45%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  
+  .video-item {
+    flex: 0 0 100%;
+  }
+}
+
+.video-frame {
+  width: 100%;
+  height: 100%;
+}
